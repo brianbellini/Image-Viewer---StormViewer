@@ -19,8 +19,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Challenge 3
         totalPictures = pictureList.count
-        print(totalPictures)
         if let selectedPictureNumber = pictureList.firstIndex(of: selectedImage!) {
             title = String(selectedPictureNumber + 1) + " of " + String(totalPictures)
         }
